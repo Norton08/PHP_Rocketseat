@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable; //trait -> algo que consegue utilizar para extender a classe(característica)
 
     /**
      * The attributes that are mass assignable.
