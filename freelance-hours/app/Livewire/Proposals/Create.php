@@ -32,6 +32,8 @@ class Create extends Component
 			$this->addError('agree', 'Você precisa concordar com os termos de uso!');
 			return;
 		}
+
+		$this->dispatch('proposal::created');
 		 
 		$this->project->proposals()
 			->updateOrCreate(
